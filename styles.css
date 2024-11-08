@@ -1,0 +1,64 @@
+/* Sidebar custom styles */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    z-index: 1000;
+}
+
+#page-content-wrapper {
+    margin-left: 250px;
+}
+.list-group-small{
+    display: none;
+    position: absolute;
+    top:50px;
+}
+
+.sm{
+    display: none;
+
+}
+.sm1{
+    display: none ;
+
+}
+
+@media (max-width: 767px) {
+    #sidebar {
+        width: 60px !important ;
+        height: auto;
+        position: relative;
+    }
+    #page-content-wrapper {
+        margin-left: 0;
+    }
+    #wrapper{
+        width: 60px !important;
+    } 
+}
+
+@media screen and (max-width: 730px) {
+    .text-sm{
+        display: none !important;
+    }
+    .sm{
+        display: block !important;
+    }
+    .sm1{
+        display: block !important;
+    }
+}
+
+
+
+/* Basic layout tweaks for navbar and content */
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.container {
+    margin-top: 20px;
+}
